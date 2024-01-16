@@ -1,0 +1,228 @@
+/* add google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+/* common css starts here */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.primary-color {
+    color: #FF5400 !important;
+}
+
+.secondary-color {
+    color: #131318;
+}
+
+.fs-lg {
+    font-size: 36px;
+}
+
+.fs-xxl {
+    font-size: 64px;
+}
+
+.fw-bold {
+    font-weight: 800;
+}
+
+.text-mute {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 24px 0px;
+}
+
+.primary-btn {
+    width: 174px;
+    height: 52px;
+    color: #fff;
+    background-color: #FF5400;
+    font-size: 16px;
+    font-weight: 600;
+    outline: 0;
+    border: 0;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+/* common css ends here */
+
+/* navbar section css starts here */
+.nav-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    border: 2px solid rebeccapurple;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.navigation li a {
+    display: inline-block;
+    color: #424247;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.navigation li a:hover {
+    color: #FF5400;
+}
+
+#nav-toggler {
+    display: none;
+}
+
+.nav-toggler-icon {
+    display: none;
+    font-size: 30px;
+}
+
+/* navbar section css ends here */
+
+/* banner section starts here */
+.banner {
+    height: 500px;
+    background-image:
+        linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+        url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-info {
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+}
+
+.input-field {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    background-color: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+}
+
+.input-container {
+    position: relative;
+    width: 174px;
+    /* Adjust the width as needed */
+}
+
+.input-container input {
+    padding-right: 30px;
+    padding-left: 12px;
+    /* Space for the icon */
+    width: 100%;
+    height: 52px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+}
+
+.dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Adjust the right spacing as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.fa-circle-chevron-down {
+    color: red;
+}
+
+.fa-magnifying-glass {
+    padding-right: 14px;
+}
+
+/* banner-section ends here */
+
+
+
+/*  responsive css starts here */
+@media screen and (max-width: 900px) {
+    .nav-toggler-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation {
+        position: absolute;
+        left: 0px;
+        top: 120px;
+        background-color: rgba(19, 19, 24, 0.05);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+        transform: translateY(-600px);
+        transition: .5s ease-out;
+    }
+
+    .navigation li a {
+        padding: 0px;
+    }
+
+    #nav-toggler:checked~.navigation {
+        transform: translate(0px);
+    }
+    .text-mute {
+        font-size: 14px;
+    }
+
+    .fs-sm {
+        font-size: 22px;
+    }
+
+    .input-field {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+}
