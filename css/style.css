@@ -34,6 +34,10 @@ body {
     font-size: 36px;
 }
 
+.fs-xl {
+    font-size: 40px;
+}
+
 .fs-xxl {
     font-size: 64px;
 }
@@ -61,6 +65,10 @@ body {
     border-radius: 8px;
 }
 
+.my {
+    margin: 100px 0px;
+}
+
 /* common css ends here */
 
 /* navbar section css starts here */
@@ -70,7 +78,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 50px 0px;
-    border: 2px solid rebeccapurple;
 }
 
 .logo {
@@ -180,6 +187,103 @@ body {
 
 /* banner-section ends here */
 
+/* tour section css starts here */
+.tour {
+    display: flex;
+    gap: 50px;
+}
+
+.tour-left {
+    flex: 1;
+}
+
+.tour-right {
+    flex: 1;
+}
+
+.tour-right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* tour section css ends here */
+
+/* gallery section css starts here */
+.gallery-info {
+    text-align: center;
+}
+
+.two-column {
+    display: flex;
+    gap: 24px;
+}
+
+.two-column-left {
+    flex: 1;
+}
+
+.two-column-right {
+    flex: 1;
+}
+
+.three-column {
+    display: flex;
+    gap: 24px;
+}
+
+.three-column-left {
+    flex: 4;
+}
+
+.three-column-middle {
+    flex: 5;
+}
+
+.three-column-right {
+    flex: 3;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cl-2 {
+    display: flex;
+    gap: 24px;
+}
+
+.cl-2-left {
+    flex: 5;
+}
+
+.cl-2-right {
+    flex: 7;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust the text color as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Optional text shadow for better visibility */
+}
+
+/* Additional styling for the text if needed */
+.centered-text p {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* gallery section css ends here */
 
 
 /*  responsive css starts here */
@@ -209,6 +313,7 @@ body {
     #nav-toggler:checked~.navigation {
         transform: translate(0px);
     }
+
     .text-mute {
         font-size: 14px;
     }
@@ -221,8 +326,26 @@ body {
         flex-direction: column;
     }
 
+    .tour {
+        flex-direction: column;
+    }
+
+    .three-column {
+        flex-direction: column;
+    }
+
+    .two-column{
+        flex-direction: column;
+    }
+
+    .cl-2{
+        flex-direction: column;
+    }
+
+    .centered-text p {
+        font-size: 16px;
+    }
+
 }
 
-@media screen and (max-width: 600px) {
-    
-}
+@media screen and (max-width: 600px) {}
