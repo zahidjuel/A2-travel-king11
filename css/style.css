@@ -30,6 +30,10 @@ body {
     color: #131318;
 }
 
+.fs-md {
+    font-size: 24px;
+}
+
 .fs-lg {
     font-size: 36px;
 }
@@ -67,6 +71,14 @@ body {
 
 .my {
     margin: 100px 0px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* common css ends here */
@@ -209,13 +221,11 @@ body {
 /* tour section css ends here */
 
 /* gallery section css starts here */
-.gallery-info {
-    text-align: center;
-}
 
 .two-column {
     display: flex;
     gap: 24px;
+    margin-bottom: 24px;
 }
 
 .two-column-left {
@@ -229,6 +239,7 @@ body {
 .three-column {
     display: flex;
     gap: 24px;
+    margin-bottom: 24px;
 }
 
 .three-column-left {
@@ -285,6 +296,84 @@ body {
 
 /* gallery section css ends here */
 
+/* choose us section css starts here */
+
+.card-item {
+    max-width: 573px;
+    height: 284px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.card-bg-uniqe {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05)
+}
+
+
+.one-column {
+    display: flex;
+    justify-content: center;
+}
+
+/* choose us section css ends here */
+
+/* newsletter section starts css here */
+.newsletter {
+    display: flex;
+    gap: 24px;
+}
+
+.news-card {
+    flex: 1;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.news-card input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 16px;
+    outline: 0;
+    border: 0;
+}
+
+.btn-width {
+    width: 100%;
+}
+
+.discount-photo {
+    flex: 2;
+    position: relative;
+}
+
+.discount-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.rotate-btn {
+    width: 40%;
+    height: 95px;
+    position: absolute;
+    left: 45%;
+    bottom: 15%;
+    transform: rotate(-19.628deg);
+    background-color: #FF5400;
+    border: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    border-radius: 8px;
+}
+
+/* newsletter section css ends here */
+
 
 /*  responsive css starts here */
 @media screen and (max-width: 900px) {
@@ -334,11 +423,11 @@ body {
         flex-direction: column;
     }
 
-    .two-column{
+    .two-column {
         flex-direction: column;
     }
 
-    .cl-2{
+    .cl-2 {
         flex-direction: column;
     }
 
@@ -346,6 +435,17 @@ body {
         font-size: 16px;
     }
 
-}
+    .card-item {
+        max-width: 100%;
+    }
 
-@media screen and (max-width: 600px) {}
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .news-card {
+        width: 100%;
+    }
+
+
+    @media screen and (max-width: 600px) {}
